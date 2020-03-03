@@ -1,0 +1,65 @@
+@charset "UTF-8";
+.container {
+  margin: 0 auto;
+  background-color: #C5C5C9;
+  display: flex;
+  flex-direction: column;
+  max-width: 1140px;
+}
+
+.column {
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  flex:0 0 200px;
+  /*they all have
+  flex grow of 0
+  shrink of 0
+  basis of 200
+  if the contianer becomes smaller than the toal size needed they will overflow */
+}
+
+.column3 {
+	visibility: hidden;
+}
+
+.column4 {
+	visibility: hidden;
+}
+
+.column1 {
+	background-color: #FDA2E0;
+}
+
+.column2 {
+	background-color: #EA1C1C;
+}
+
+@media screen and (min-width: 601px) {
+
+.container {
+	flex-direction: row;
+	
+	}
+
+.column3 {
+	visibility: visible;
+	background-color: #575757;
+}
+
+.column4 {
+	visibility: visible;
+	background-color: #473909;
+}
+
+.column1 {
+	background-color: #3FA5F5;
+}
+
+.column2 {
+	background-color: #973FF5;
+}
+
+	}
